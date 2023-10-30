@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: #F85606;
+    }
+    h2{
+        background-color: #410038;
+        color: white;
+        width: 16rem;
+        text-align: center;
+        margin: 4rem auto;
+        padding: 1rem;
+        border-radius: 3px;
+    }
+    table thead th{
+        background-color: #F85606;
+        color:white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    table tbody tr td{
+        padding: 1rem;
+    }
+    table{
+        box-shadow: 1px 1px 1.5px white;
+    }
+ button{
+    cursor: pointer;
+ }
+    .cart-container{
+        display: flex;
+        gap:5rem;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <h2>Your shopping cart</h2>
+    <div class="cart-container">
+        <div class="cart-items">
+            <table border="1px solid">
+                <thead>
+                    <th colspan="3">Your Cart</th>
+                </thead>
+                <tbody id="table-body-cart">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="products">
+            <table border="1px solid">
+                <thead>
+                    <th colspan="3">Shopping products</th>
+                 
+                </thead>
+                <tbody id="table-body-product">
+                  <tr>
+                     <td>Shocks</td> 
+                     <td>Price:12$</td> 
+                     <td><button class="add-to-cart">Add to cart</button></td> 
+                  </tr>
+                  <tr>
+                     <td>Shirts</td> 
+                     <td>Price:20$</td> 
+                     <td><button class="add-to-cart">Add to cart</button></td> 
+                  </tr>
+                  <tr>
+                     <td>Hair dryer</td> 
+                     <td>Price:15$</td> 
+                     <td><button class="add-to-cart">Add to cart</button></td> 
+                  </tr>
+                  <tr>
+                     <td>Toys</td> 
+                     <td>Price:10$</td> 
+                     <td><button class="add-to-cart">Add to cart</button></td> 
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./script.js">
+
+
+    </script>
+</body>
+</html>
